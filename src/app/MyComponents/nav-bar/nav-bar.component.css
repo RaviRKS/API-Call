@@ -1,0 +1,36 @@
+/* Navbar container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Branding or Welcome Message */
+.container .branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Optional styling for links or items if included */
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #adb5bd;
+}
