@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MethodSelectorComponent } from './method-selector.component';
+import { RightsideBarComponent } from './rightside-bar.component';
 
-describe('MethodSelectorComponent', () => {
-  let component: MethodSelectorComponent;
-  let fixture: ComponentFixture<MethodSelectorComponent>;
+describe('RightsideBarComponent', () => {
+  let component: RightsideBarComponent;
+  let fixture: ComponentFixture<RightsideBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MethodSelectorComponent]
+      imports: [RightsideBarComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MethodSelectorComponent);
+    fixture = TestBed.createComponent(RightsideBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

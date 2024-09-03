@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CatSelectorComponent } from './cat-selector.component';
+import { LeftsideBarComponent } from './leftside-bar.component';
 
-describe('CatSelectorComponent', () => {
-  let component: CatSelectorComponent;
-  let fixture: ComponentFixture<CatSelectorComponent>;
+describe('LeftsideBarComponent', () => {
+  let component: LeftsideBarComponent;
+  let fixture: ComponentFixture<LeftsideBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CatSelectorComponent]
+      imports: [LeftsideBarComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CatSelectorComponent);
+    fixture = TestBed.createComponent(LeftsideBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

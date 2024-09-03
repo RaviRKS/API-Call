@@ -1,0 +1,59 @@
+/* Main container for the right sidebar */
+.rightside-bar {
+    background-color: #e2e2e2;
+    /* Light background color for a clean look */
+    padding: 20px;
+    /* Padding around the content */
+    border-left: 2px solid #ddd;
+    /* Subtle border on the left side */
+    height: 100vh;
+    /* Full height to match the viewport */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    overflow-y: auto;
+    /* Enable scrolling if content overflows */
+}
+
+/* Heading style */
+.rightside-bar h2 {
+    color: #333;
+    /* Dark color for contrast */
+    font-size: 1.5rem;
+    /* Slightly larger font size */
+    font-weight: 600;
+    /* Semi-bold for emphasis */
+    margin-bottom: 15px;
+    /* Space below the heading */
+}
+
+/* Paragraph styles */
+.rightside-bar p {
+    color: #555;
+    /* Medium gray color for readability */
+    font-size: 1rem;
+    /* Standard font size */
+    line-height: 1.5;
+    /* Spacing between lines for better readability */
+    margin-bottom: 10px;
+    /* Space below each paragraph */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .rightside-bar {
+        padding: 15px;
+        /* Reduce padding on smaller screens */
+        box-shadow: none;
+        /* Remove shadow on mobile for simplicity */
+    }
+
+    .rightside-bar h2 {
+        font-size: 1.3rem;
+        /* Slightly smaller heading on mobile */
+    }
+
+    .rightside-bar p {
+        font-size: 0.9rem;
+        /* Smaller font size for better fit */
+    }
+}
