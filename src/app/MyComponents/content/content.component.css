@@ -5,7 +5,7 @@
     /* Distributes items evenly */
     align-items: stretch;
     /* Stretches items to match container height */
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
     /* Full viewport height */
 }
