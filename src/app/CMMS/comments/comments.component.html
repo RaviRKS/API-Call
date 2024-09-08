@@ -1,0 +1,17 @@
+<div class="comments-form">
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="commentId">Comment ID:</label>
+            <input id="commentId" formControlName="commentId" type="text" placeholder="Enter Comment ID" required />
+        </div>
+        <button type="submit" [disabled]="commentForm.invalid">Submit</button>
+    </form>
+
+    <div *ngIf="response; else elseBlock">
+        <h3>API Response:</h3>
+        <pre>{{ response | json }}</pre>
+    </div>
+    <ng-template #elseBlock>
+        <p>{{errorMsg}}</p>
+    </ng-template>
+</div>
