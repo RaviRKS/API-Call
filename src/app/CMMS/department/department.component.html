@@ -13,8 +13,11 @@
         <button type="submit" [disabled]="departmentForm.invalid">Submit</button>
     </form>
 
-    <div *ngIf="response">
+    <div *ngIf="response; else elseBlock">
         <h3>API Response:</h3>
         <pre>{{ response | json }}</pre>
     </div>
+    <ng-template #elseBlock>
+        <p>{{errorMsg}}</p>
+    </ng-template>
 </div>

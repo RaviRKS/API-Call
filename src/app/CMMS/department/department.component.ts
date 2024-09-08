@@ -14,6 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class DepartmentComponent {
   departmentForm: FormGroup;
   response: any;
+  errorMsg: any;
 
   constructor(private fb: FormBuilder, private departmentService: DepartmentService) {
     // Initialize form group with validators
@@ -33,6 +34,7 @@ export class DepartmentComponent {
           this.response = data;
         },
         error: (error) => {
+          this.errorMsg = "Got error in connection to server. Check again with right parameters";
           console.error('Error fetching data:', error);
         }
       });

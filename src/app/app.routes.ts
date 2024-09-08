@@ -1,15 +1,45 @@
 import { Routes } from '@angular/router';
 import { DepartmentComponent } from './CMMS/department/department.component';
 import { RightsideBarComponent } from './MyComponents/rightside-bar/rightside-bar.component';
+import { CmmsDepartmentComponent } from './CMMS/cmms-department/cmms-department.component';
+import { CmmsGroupComponent } from './CMMS/cmms-group/cmms-group.component';
+import { CmmsLocationComponent } from './CMMS/cmms-location/cmms-location.component';
+import { CmmsAssetComponent } from './CMMS/cmms-asset/cmms-asset.component';
+import { CmmsProductionLineComponent } from './CMMS/cmms-production-line/cmms-production-line.component';
+import { CmmsProblemCategoryComponent } from './CMMS/cmms-problem-category/cmms-problem-category.component';
+import { CmmsProblemTypeComponent } from './CMMS/cmms-problem-type/cmms-problem-type.component';
+import { CmmsEventCodeComponent } from './CMMS/cmms-event-code/cmms-event-code.component';
+import { CmmsProblemComponent } from './CMMS/cmms-problem/cmms-problem.component';
+import { CmmsAssetTypeComponent } from './CMMS/cmms-asset-type/cmms-asset-type.component';
+import { CmmsAssetMappingComponent } from './CMMS/cmms-asset-mapping/cmms-asset-mapping.component';
+import { OeeShiftComponent } from './OEE/oee-shift/oee-shift.component';
+import { OeePlantCalendarComponent } from './OEE/oee-plant-calendar/oee-plant-calendar.component';
+import { OeeRootCauseCategoriesComponent } from './OEE/oee-root-cause-categories/oee-root-cause-categories.component';
+import { OeeRootCauseComponent } from './OEE/oee-root-cause/oee-root-cause.component';
+import { OeeTagMappingComponent } from './OEE/oee-tag-mapping/oee-tag-mapping.component';
+import { OeeUpDownThresholdComponent } from './OEE/oee-up-down-threshold/oee-up-down-threshold.component';
+import { CommentsComponent } from './CMMS/comments/comments.component';
 
 
 export const routes: Routes = [
     { path: '', component: RightsideBarComponent },
-    { path: 'cmms-department', component: DepartmentComponent },
-    { path: 'cmms-location', component: DepartmentComponent },
-    { path: 'cmms-group', component: DepartmentComponent },
-    { path: 'cmms-asset', component: DepartmentComponent },
-    // { path: 'one', component: ComponentOneComponent },
-    // { path: 'two', component: ComponentTwoComponent },
-    // { path: 'three', component: ComponentThreeComponent },
+    { path: 'joke', component: DepartmentComponent },
+    { path: 'comments', component: CommentsComponent },
+    { path: 'cmms-department', component: CmmsDepartmentComponent },
+    { path: 'cmms-group', component: CmmsGroupComponent },
+    { path: 'cmms-location', component: CmmsLocationComponent },
+    { path: 'cmms-production-line', component: CmmsProductionLineComponent },
+    { path: 'cmms-problem-category', component: CmmsProblemCategoryComponent },
+    { path: 'cmms-problem-type', component: CmmsProblemTypeComponent },
+    { path: 'cmms-event-code', component: CmmsEventCodeComponent },
+    { path: 'cmms-problem', component: CmmsProblemComponent },
+    { path: 'cmms-asset-type', component: CmmsAssetTypeComponent },
+    { path: 'cmms-asset', component: CmmsAssetComponent },
+    { path: 'cmms-asset-mapping', component: CmmsAssetMappingComponent },
+    { path: 'oee-shift', component: OeeShiftComponent },
+    { path: 'oee-plant-calendar', component: OeePlantCalendarComponent },
+    { path: 'oee-root-cause-category', component: OeeRootCauseCategoriesComponent },
+    { path: 'oee-root-cause', component: OeeRootCauseComponent },
+    { path: 'oee-tag-mapping', component: OeeTagMappingComponent },
+    { path: 'oee-updown-threshold', component: OeeUpDownThresholdComponent },
 ];
