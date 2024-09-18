@@ -19,12 +19,14 @@ import { OeeRootCauseComponent } from './OEE/oee-root-cause/oee-root-cause.compo
 import { OeeTagMappingComponent } from './OEE/oee-tag-mapping/oee-tag-mapping.component';
 import { OeeUpDownThresholdComponent } from './OEE/oee-up-down-threshold/oee-up-down-threshold.component';
 import { CommentsComponent } from './CMMS/comments/comments.component';
+import { AddObjectComponent } from './CMMS/add-object/add-object.component';
 
 
 export const routes: Routes = [
     { path: '', component: RightsideBarComponent },
     { path: 'joke', component: DepartmentComponent },
     { path: 'comments', component: CommentsComponent },
+    { path: 'add-object', component: AddObjectComponent },
     { path: 'cmms-department', component: CmmsDepartmentComponent },
     { path: 'cmms-group', component: CmmsGroupComponent },
     { path: 'cmms-location', component: CmmsLocationComponent },
