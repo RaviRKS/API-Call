@@ -1,0 +1,23 @@
+<div class="container">
+    <form [formGroup]="addObjectForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="parameter">Enter Parameter:</label>
+            <input id="parameter" formControlName="parameter" class="form-control" placeholder="Enter your value" />
+
+            <!-- Correct way to access form control using get() -->
+            <div *ngIf="addObjectForm.get('parameter')?.invalid && addObjectForm.get('parameter')?.touched">
+                <small class="text-danger">Parameter is required.</small>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="addObjectForm.invalid">Submit</button>
+    </form>
+
+    <div *ngIf="response; else elseBlock"></div>
+    <h3>API Response:</h3>
+    <pre>{{ response | json }}</pre>
+
+    <ng-template #elseBlock>
+        <p>{{errorMsg}}</p>
+    </ng-template>
+</div>
